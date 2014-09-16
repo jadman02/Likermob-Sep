@@ -88,6 +88,7 @@ else {
 
 // Load page from about.html file to main View:
 mainView.loadPage('register.html');
+$$('html').removeClass('with-statusbar-overlay');
 	
 }	
 
