@@ -87,7 +87,7 @@ else{mainView.loadPage('location.html');}
 else {
 
 // Load page from about.html file to main View:
-mainView.loadPage('register.html');
+//mainView.loadPage('register.html');
 	
 }	
 
