@@ -7,13 +7,18 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 
+myApp.onPageInit('register', function (page) {
 
+alert('on register page');
+mainView.hideNavbar();
+
+});
 	
 	//Now we add our callback for initial page
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-
+mainView.showNavbar();
 askLocation();
 functionEmpty();
 
