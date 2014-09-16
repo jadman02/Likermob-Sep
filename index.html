@@ -215,7 +215,7 @@
 						document.getElementById('status').innerHTML = 'user is logged';
 						localStorage.setItem("register", "register");
 						mainView.loadPage('index.html');
-						mainView.hideNavbar();
+						mainView.showNavbar();
 						
                     } else {
                         alert('Facebook login failed: ' + response.error);
