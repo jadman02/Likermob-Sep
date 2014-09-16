@@ -13,7 +13,7 @@ var $$ = Dom7;
 myApp.onPageInit('index', function (page) {
   //Do something here with home page
 
-mainView.showNavbar();
+
 askLocation();
 functionEmpty();
 
@@ -26,12 +26,7 @@ functionEmpty();
 
 
 
-myApp.onPageInit('register', function (page) {
 
-alert('on register page');
-mainView.hideNavbar();
-
-});
 
 
 
@@ -83,7 +78,12 @@ var mainView = myApp.addView('.view-main', {
 });
 
 	
+myApp.onPageInit('register', function (page) {
 
+alert('on register page');
+mainView.hideNavbar();
+
+});
 
 
 
