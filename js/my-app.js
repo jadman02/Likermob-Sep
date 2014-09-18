@@ -39,7 +39,7 @@ alert('on location page');
 
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
-var radius = localStorage.getItem('register');
+var radius = localStorage.getItem('radius');
 if (!radius) {radius == 25}
 
 document.getElementById("amount").innerHTML = radius;
