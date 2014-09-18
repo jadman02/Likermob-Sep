@@ -41,7 +41,7 @@ document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("pos
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
-$$("#resulty li").remove();
+
 $$.getJSON('https://maps.googleapis.com/maps/api/place/autocomplete/json?input='+ this.value +'&types=(cities)&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
 $$("#resulty li").remove();
 for (i = 0; i < 5; i++) 
@@ -281,6 +281,8 @@ function savePosition(place_id) {
 
 
 $$.getJSON('https://maps.googleapis.com/maps/api/place/details/json?placeid='+ place_id +'&key=AIzaSyAssayN33K28DkBxPB8iWOM0NG2-sCNHEk', function(response){
+
+$$("#resulty li").remove();
 
 localStorage.setItem("latitude", response.result.geometry.location.lat);
 localStorage.setItem("longitude", response.result.geometry.location.lng);
