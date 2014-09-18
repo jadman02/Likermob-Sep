@@ -308,3 +308,11 @@ function focusLocation(){
 var elem = document.getElementById("numPeople");
 elem.value = "";
 }
+
+function searchButton(){
+var radius = document.getElementById("amount").value;
+
+localStorage.setItem("radius", radius);	
+alert(radius);
+
+}
