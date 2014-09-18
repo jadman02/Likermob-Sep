@@ -37,7 +37,9 @@ myApp.onPageInit('location', function (page) {
 
 alert('on location page');
 
-document.getElementById("current_location").innerHTML = localStorage.getItem("position");
+input.attr("placeholder", value);
+
+document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
