@@ -39,7 +39,7 @@ alert('on location page');
 
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
-$$('#radius').keyup(function(){
+$$('#radius').onchange(function(){
 	alert("radius changed");
 	
 });
