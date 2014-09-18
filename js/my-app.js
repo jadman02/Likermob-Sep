@@ -39,8 +39,21 @@ alert('on location page');
 
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
+var current_radius = $$('#current_radius');
+
+$$('#radius').change(function(){
 
 
+
+var radius = document.getElementById("radius").value;
+alert(radius);
+current_radius.html(this.value);
+
+
+
+
+	
+});
 
 
 //Autocomplete JSON Google
