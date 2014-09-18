@@ -43,17 +43,12 @@ var current_radius = $$('#current_radius');
 
 $$('#radius').change(function(){
 
+var radius = document.getElementById('amount').value;
+alert(radius);
 
-
-var radius = document.getElementById('radius').value;
-
-
-
-
-
-	
 });
 
+$$('#radius').change;
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
