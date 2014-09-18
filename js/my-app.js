@@ -41,17 +41,7 @@ document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("pos
 
 
 
-$$('#radius').change(function(){
 
-var radius = document.getElementById("radius").value;
-alert(radius);
-
-
-
-elem.value = response.result.formatted_address;
-
-	
-});
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
