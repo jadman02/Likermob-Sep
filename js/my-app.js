@@ -49,7 +49,7 @@ for (i = 0; i < 5; i++)
 	
 
 	
-$$( '#resulty' ).append('<li class="item-content"><div class="item-inner"><div class="item-title button" onclick="savePosition(\''+ response.predictions[i].place_id  +'\')">' + response.predictions[i].description + '</div></div></li>');
+$$( '#resulty' ).append('<li class="item-content"><div class="item-media"></div><div class="item-inner"><div class="item-title button" style="margin-left:15px;" onclick="savePosition(\''+ response.predictions[i].place_id  +'\')">' + response.predictions[i].description + '</div></div></li>');
 }
 });    
     
