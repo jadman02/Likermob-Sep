@@ -44,8 +44,8 @@ document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("pos
 $$('#radius').change(function(){
 
 var radius = document.getElementById("radius").value;
-localStorage.setItem("radius", radius);
-document.getElementById("current_radius").innerHTML = radius + "km";
+alert(radius);
+
 
 
 elem.value = response.result.formatted_address;
