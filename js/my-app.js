@@ -37,8 +37,6 @@ myApp.onPageInit('location', function (page) {
 
 alert('on location page');
 
-input.attr("placeholder", value);
-
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
 //Autocomplete JSON Google
