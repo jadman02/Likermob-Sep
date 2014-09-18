@@ -296,3 +296,10 @@ elem.value = response.result.formatted_address;
 	
 	
 }
+
+
+function focusLocation(){
+	
+var elem = document.getElementById("numPeople");
+elem.value = "";
+}
