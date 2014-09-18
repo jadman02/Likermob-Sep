@@ -39,7 +39,10 @@ alert('on location page');
 
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
-$$('#radius').change;
+var radius = localStorage.getItem('register');
+if (!radius) {radius == 25}
+
+document.getElementById("amount").innerHTML = radius;
 
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
