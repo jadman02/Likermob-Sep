@@ -298,7 +298,7 @@ elem.value = response.result.formatted_address;
 
 });    	
 	
-	
+	 
 	
 }
 
