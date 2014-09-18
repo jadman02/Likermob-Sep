@@ -311,8 +311,14 @@ elem.value = "";
 
 function searchButton(){
 var radius = document.getElementById("amount").value;
+var search = document.getElementById("search").value;
+var category = document.getElementById("category").value;
+var order = document.getElementById("order").value;
+
 
 localStorage.setItem("radius", radius);	
-alert(radius);
+localStorage.setItem("search", search);	
+localStorage.setItem("category", category);	
+localStorage.setItem("order", order);	
 
 }
