@@ -286,10 +286,11 @@ localStorage.setItem("latitude", response.result.geometry.location.lat);
 localStorage.setItem("longitude", response.result.geometry.location.lng);
 localStorage.setItem("position", response.result.formatted_address);
 
-alert (response.result.geometry.location.lng);
+var elem = document.getElementById("numPeople");
+elem.value = response.result.formatted_address;
 
 });    	
-alert(place_id);	
+	
 	
 	
 }
