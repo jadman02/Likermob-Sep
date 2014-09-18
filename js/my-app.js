@@ -46,8 +46,7 @@ $$('#radius').change(function(){
 
 
 var radius = document.getElementById('radius').value;
-alert('radius is:' + radius);
-current_radius.html(this.value);
+
 
 
 
