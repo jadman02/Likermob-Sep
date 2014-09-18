@@ -39,6 +39,11 @@ alert('on location page');
 
 document.getElementsByName('numPeople')[0].placeholder=localStorage.getItem("position");
 
+$$('#radius').keyup(function(){
+	alert("radius changed");
+	
+});
+
 //Autocomplete JSON Google
 $$('#numPeople').keyup(function(){
 
