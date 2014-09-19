@@ -31,6 +31,7 @@
 <access origin="graph.facebook.com"/>
 <access origin="api.facebook.com"/>
 <access origin="m.facebook.com"/>
+<access origin="facebook.com"/>
  
  <gap:platform name="ios" />
  <preference name="orientation" value="portrait" />
