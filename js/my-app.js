@@ -66,6 +66,13 @@ $$('.item-title').on('click', function (e) {
     alert('clicked');
 });
 
+
+//likebutton
+
+$$('#likebutton').on('click', function (e) {
+    alert('Hi');
+});
+
 	
 });	
 
@@ -260,11 +267,7 @@ function createContentPage() {
 
 
 
-//likebutton
 
-$$('#likebutton').on('click', function (e) {
-    alert('Hi');
-});
 
 
 
