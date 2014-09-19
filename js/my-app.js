@@ -263,7 +263,7 @@ function createContentPage() {
 //likebutton
 
 $$('#likebutton').on('click', function (e) {
-    alert("Hi");
+    alert('Hi');
 });
 
 
