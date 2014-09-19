@@ -17,6 +17,11 @@ myApp.onPageInit('index', function (page) {
 askLocation();
 functionEmpty();
 
+//likebutton
+
+$$('#likebutton').on('click', function (e) {
+    alert('Hi');
+});
 
 
 
@@ -67,11 +72,7 @@ $$('.item-title').on('click', function (e) {
 });
 
 
-//likebutton
 
-$$('#likebutton').on('click', function (e) {
-    alert('Hi');
-});
 
 	
 });	
