@@ -21,8 +21,8 @@ functionEmpty();
 
 $$('#likebutton').on('click', function (e) {
 
-var top = $$(window).scrollTop();
-    var bottom = top + $$(window).height();
+var top = $(window).scrollTop();
+    var bottom = top + $(window).height();
 
 
     alert('top:' + top + 'bottom:' + bottom);
