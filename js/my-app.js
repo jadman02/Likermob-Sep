@@ -19,13 +19,12 @@ functionEmpty();
 
 //likebutton
 
-$$('#likebutton').on('click', function (e) {
+$$(window).scroll(function() {
 
 var top = $$(window).scrollTop();
-    var bottom = top + $$(window).height();
 
 
-    alert('top:' + top + 'bottom:' + bottom);
+    alert('top:' + top);
 });
 
 
