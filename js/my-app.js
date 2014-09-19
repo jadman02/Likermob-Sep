@@ -259,6 +259,17 @@ function createContentPage() {
 }
 
 
+
+//likebutton
+
+$$('#likebutton').on('click', function (e) {
+    alert("Hi");
+});
+
+
+
+
+
 function askLocation() {
 	
 	navigator.geolocation.getCurrentPosition(onSuccess, onError);
