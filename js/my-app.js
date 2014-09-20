@@ -19,9 +19,10 @@ functionEmpty();
 
 //likebutton
 
-$$(window).scroll(function() {
+$$('#likebutton').on('click', function (e) {
 
-var top = $$(window).scrollTop();
+var top = $$(#likebutton).scrollTop();
+
 
 
     alert('top:' + top);
