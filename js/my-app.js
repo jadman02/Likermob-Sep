@@ -21,7 +21,7 @@ functionEmpty();
 
 $$('#likebutton').on('click', function (e) {
 
-var top = $$('.list-position1').scrollTop();
+var top = $$('#likebutton').scrollTop();
 
 
 
