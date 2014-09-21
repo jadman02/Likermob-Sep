@@ -160,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=100&height=100" /></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div><div class="item-after">23%</div></div><div class="item-subtitle"> >'+ response[i][16] + '   </div><div class="item-text">Lorem ipsum dolor sit amet...</div></div></a><div class="item-input"><input type="text" placeholder="Write a comment..." style="text-align:center;margin:10px;border:1px solid #ccc;"></div><a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a></li>');
+$$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" /></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div><div class="item-after">23%</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a><div class="item-input"><input type="text" placeholder="Write a comment..." style="text-align:center;margin:10px;border:1px solid #ccc;"></div><a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a></li>');
 
 }
 track_click++;
