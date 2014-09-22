@@ -16,7 +16,7 @@ myApp.onPageInit('index', function (page) {
 
 askLocation();
 functionEmpty();
-
+alert(collision($$('#div1'), $$('#div2')));
 
 //likebutton
 
@@ -344,7 +344,7 @@ function collision($div1, $div2) {
       return true;
     }
 
-alert(collision($$('#div1'), $$('#div2')));
+
 
 
 
