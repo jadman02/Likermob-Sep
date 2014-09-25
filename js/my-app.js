@@ -160,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li><div class="item-media button"><img style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" /></div><a href="#" class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a> <a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a>  </li>');
+$$( '#result' ).append('<li><div class="item-content"><div class="item-media button"><img style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" /></div><a href="#" class="item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a> <a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a>  </div></li>');
 
 }
 track_click++;
