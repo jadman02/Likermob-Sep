@@ -16,7 +16,6 @@ myApp.onPageInit('index', function (page) {
 
 askLocation();
 functionEmpty();
-alert(collision($$('#div1'), $$('#div2')));
 
 //likebutton
 
@@ -161,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" /></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a> <a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a>  </li>');
+$$( '#result' ).append('<li><a href="#" class="item-link item-content"><div class="item-media"><img class="button" style="border-radius:50%;" src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" /></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a> <a href="#" class="button"><i class="pe-7s-like2 pe-2x"></i></a>  </li>');
 
 }
 track_click++;
@@ -326,23 +325,7 @@ elem.value = response.result.formatted_address;
 
 
 
-function collision($div1, $div2) {
-      var x1 = $div1.offset().left;
-      var y1 = $div1.offset().top;
-      var h1 = $div1.outerHeight(true);
-      var w1 = $div1.outerWidth(true);
-      var b1 = y1 + h1;
-      var r1 = x1 + w1;
-      var x2 = $div2.offset().left;
-      var y2 = $div2.offset().top;
-      var h2 = $div2.outerHeight(true);
-      var w2 = $div2.outerWidth(true);
-      var b2 = y2 + h2;
-      var r2 = x2 + w2;
-        
-      if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
-      return true;
-    }
+
 
 
 
