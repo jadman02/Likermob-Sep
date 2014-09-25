@@ -160,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li><div class="item-content"><div class="item-media"><a href="#" class="button" style="border-radius:50%;height:50px;width:50px;"><img src="http://graph[1]+'/picture?width=100&height=100" /></a></div><a href="#" class="item-link"><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a></div>  </li>');
+$$( '#result' ).append('<li><div class="item-content"><div class="item-media"><a href="#" class="button" style="border-radius:50%;height:50px;width:50px;"><img src="http://graph.facebook.com/'+response[i][2]+'/picture?width=50&height=50" /></a></div><a href="#" class="item-link"><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a></div>  </li>');
 
 }
 track_click++;
