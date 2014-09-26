@@ -160,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li class="swipeout"><a href="#" class="swipeout-content item-content item-link"><div class="item-media"><img src="http://graph.facebook.com/'+response[i][1]+'/picture?width=50&height=50" style="border-radius:50%;"/></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+ response[i][3] + '</div></div><div class="item-subtitle">  '+ response[i][16] + '   </div><div class="item-text">  '+ response[i][4] +'    </div></div></a><div class="swipeout-actions-right"><a href="#">Action 1</a><a href="#">Action 2</a></div></li>');
+$$( '#result' ).append('<li class="swipeout"><div class="swipeout-content"><a href="#" class="item-content item-link"><div class="item-inner"><div class="item-title-row"><div class="item-title">Facebook</div><div class="item-after">17:14</div></div><div class="item-subtitle">New messages from John Doe</div><div class="item-text">Lorem ipsum ...</div></div></a></div><div class="swipeout-actions-left"><a href="#" class="swipeout-overswipe bg-green reply">Reply</a><a href="#" class="bg-blue forward">Forward</a></div><div class="swipeout-actions-right"><a href="#" class="mark bg-orange">Mark</a><a href="#" class="swipeout-delete swipeout-overswipe">Delete</a></div></li>');
 
 }
 track_click++;
