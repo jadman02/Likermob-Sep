@@ -160,7 +160,7 @@ $$.getJSON('http://www.smilesavers.net.au/jsonp.php?callback=?', function(respon
 localStorage.setItem("total_pages", response.length);
 $$("#loader-container").hide();
 for (i = 0; i < 5; i++) {        
-$$( '#result' ).append('<li class="swipeout"><div class="swipeout-content"><a href="deal.html" class="item-content item-link"><div class="item-inner"><div class="item-title-row"><div class="item-title">Facebook</div><div class="item-after">17:14</div></div><div class="item-subtitle">New messages from John Doe</div><div class="item-text">Lorem ipsum ...</div></div></a></div><div class="swipeout-actions-left"><a href="#" class="swipeout-overswipe bg-green reply">Reply</a><a href="#" class="bg-blue forward">Forward</a></div><div class="swipeout-actions-right"><a href="#" class="mark bg-orange">Mark</a><a href="#" class="swipeout-delete swipeout-overswipe">Delete</a></div></li>');
+$$( '#result' ).append('<li class="swipeout"><div class="swipeout-content"><a href="#" onclick="dealInfo()" class="item-content item-link"><div class="item-inner"><div class="item-title-row"><div class="item-title">Facebook</div><div class="item-after">17:14</div></div><div class="item-subtitle">New messages from John Doe</div><div class="item-text">Lorem ipsum ...</div></div></a></div><div class="swipeout-actions-left"><a href="#" class="swipeout-overswipe bg-green reply">Reply</a><a href="#" class="bg-blue forward">Forward</a></div><div class="swipeout-actions-right"><a href="#" class="mark bg-orange">Mark</a><a href="#" class="swipeout-delete swipeout-overswipe">Delete</a></div></li>');
 
 }
 track_click++;
@@ -275,7 +275,12 @@ function createContentPage() {
 
 
 
-
+function dealInfo(){
+	
+	
+	alert('Deal Info');
+	
+}
 
 
 
