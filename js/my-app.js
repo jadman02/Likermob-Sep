@@ -149,6 +149,23 @@ alert('on about page');
 
 
 
+function dealInfo(){
+	
+	
+	alert('Deal Info');
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 function functionEmpty() {
 $$(".load_more").removeAttr("disabled", "disabled");
 $$(".load_previous").attr("disabled", "disabled");
@@ -275,12 +292,7 @@ function createContentPage() {
 
 
 
-function dealInfo(){
-	
-	
-	alert('Deal Info');
-	
-}
+
 
 
 
